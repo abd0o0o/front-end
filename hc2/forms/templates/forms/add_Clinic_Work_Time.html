@@ -1,0 +1,92 @@
+{% extends "forms/base.html" %}
+{% block addInfo %}
+    Add Clinic Work Time
+{% endblock addInfo%}
+{% block content %}
+        <div>
+        <button class="mdl-button mdl-js-button mdl-button--icon pull-right" data-upgraded=",MaterialButton" id="panel-button">
+           <i class="material-icons">
+            more_vert
+           </i>
+          </button>
+          <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" data-mdl-for="panel-button">
+           <li class="mdl-menu__item">
+            <i class="material-icons">
+             assistant_photo
+            </i>
+            Action
+           </li>
+           <li class="mdl-menu__item">
+            <i class="material-icons">
+             print
+            </i>
+            Another action
+           </li>
+           <li class="mdl-menu__item">
+            <i class="material-icons">
+             favorite
+            </i>
+            Something else
+
+                                            here
+           </li>
+          </ul>
+         </div>
+         <form>
+         <div class="col-lg-12 p-t-20">
+           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+            <input class="mdl-textfield__input" id="txtfee" type="text" required maxlength="5"/>
+            <label class="mdl-textfield__label">
+              Fee
+            </label>
+           </div>
+              </div>
+
+         <div class="card-body row">
+          
+          <div class="col-lg-12 p-t-20">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width row">
+              <h3 style="margin-bottom: -5px;">Choose the Days You are worked on ... </h3>
+              
+               <input type="checkbox" name="saturday" value="saturday"> saturday<br>
+               <input type="checkbox" name="sunday" value="sunday"> sunday<br>
+               <input type="checkbox" name="monday" value="monday"> Monday<br>
+               <input type="checkbox" name="tuseday" value="tuseday"> Tuseday<br>
+               <input type="checkbox" name="wednesday" value="wednesday"> Wednesday<br>
+               <input type="checkbox" name="thursday" value="thursday"> Thursday <br>
+               <input type="checkbox" name="friday" value="friday"> Friday <br>
+            </div>
+           </div>
+          <div class="col-lg-12 p-t-20">
+            
+              <div class="form-control-wrapper">
+               <input class="floating-label mdl-textfield__input" id="date-start" placeholder="Start Date" type="text" data-dtp="dtp_2ph5G">
+              </div>
+             </div>
+             
+             <div class="col-lg-12 p-t-20">
+              <div class="form-control-wrapper">
+               <input class="floating-label mdl-textfield__input" id="date-end" placeholder="End Date" type="text" data-dtp="dtp_jpqjB">
+              </div>
+           </div>
+         </div>
+                <!----------------------------------------------->
+
+    <div class="col-lg-12 p-t-20">
+     <div class="col-lg-12 p-t-20 text-center">
+
+          <div class="col-lg-12 p-t-20 text-center">
+           <button class="btn btn-circle btn-success" type="button">
+             Submit!
+            </button>
+           <button class="btn btn-circle btn-danger" type="button">
+             Cancel
+            </button>
+          </div>
+         </div>
+        </div>
+       </div>
+      </form>
+     
+    
+{% endblock content%}

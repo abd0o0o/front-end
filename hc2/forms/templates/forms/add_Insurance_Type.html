@@ -1,0 +1,120 @@
+{% extends "forms/base.html" %}
+{% block addInfo %}
+    Add Insurance Type
+{% endblock addInfo%}
+{% block content %}
+        <button class="mdl-button mdl-js-button mdl-button--icon pull-right" data-upgraded=",MaterialButton" id="panel-button">
+           <i class="material-icons">
+            more_vert
+           </i>
+          </button>
+          <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" data-mdl-for="panel-button">
+           <li class="mdl-menu__item">
+            <i class="material-icons">
+             assistant_photo
+            </i>
+            Action
+           </li>
+           <li class="mdl-menu__item">
+            <i class="material-icons">
+             print
+            </i>
+            Another action
+           </li>
+           <li class="mdl-menu__item">
+            <i class="material-icons">
+             favorite
+            </i>
+            Something else
+
+                                            here
+           </li>
+          </ul>
+         </div>
+         <form>
+         <div class="card-body row">
+          <div class="col-lg-12 p-t-20">
+           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+            <input class="mdl-textfield__input" id="txtname" type="text" maxlength="40" required/>
+            <label class="mdl-textfield__label">
+             Name
+            </label>
+           </div>
+          </div>
+             
+              <!----------Drop_down_list------------------->
+             <div class="col-lg-12 p-t-20">
+           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height txt-full-width">
+            <input class="mdl-textfield__input" id="list3" readonly="" tabindex="-1" type="text" value=""/>
+            <label class="pull-right margin-0" for="list3">
+             <i class="mdl-icon-toggle__label material-icons">
+              
+
+
+             </i>
+            </label>
+            <label class="mdl-textfield__label" for="list3">
+            Insurance Company 
+            </label>
+            <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu" data-mdl-for="list3">
+             <li class="mdl-menu__item" data-val="DE">
+             China Life Insurance
+             </li>
+             <li class="mdl-menu__item" data-val="BY">
+              Egypt Insurance
+             </li>
+             <li class="mdl-menu__item" data-val="BY">
+              Royal Insurance Co
+             </li>
+             <li class="mdl-menu__item" data-val="BY">
+              BUPA International Insurance Co
+             </li>
+             <li class="mdl-menu__item" data-val="BY">
+              ACE Life Insurance - Egypt
+             </li>
+             <li class="mdl-menu__item" data-val="BY">
+              NSGB Life Insurance Co
+             </li>
+             <li class="mdl-menu__item" data-val="BY">
+              Pharaonic American Life Insurance Company (Alico)
+             </li>
+            </ul>
+           </div>
+          </div>
+             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height txt-full-width">
+                <!----------------------------------------------->
+
+                    <div class="col-lg-12 p-t-20">
+                    <div class="col-lg-12 p-t-20 text-center">
+
+           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height txt-full-width">
+            <div class="col-lg-12 p-t-20">
+              <input type="file"  id="upload-photo" name="files[]" multiple="multiple" accept="image/*" style="display: none;"/>
+             <label for="upload-photo" style="border: 1px solid #cccccc;
+             padding: 5px 30px;
+             font-family:arial;
+             font-size: 13px;
+             cursor:pointer">Upload Your Photo</label>
+            </div>
+
+
+<div class="col-lg-12 p-t-20">
+                    <div class="col-lg-12 p-t-20 text-center">
+
+          <div class="col-lg-12 p-t-20 text-center">
+           <button class="btn btn-circle btn-success" type="button">
+             Submit!
+            </button>
+           <button class="btn btn-circle btn-danger" type="button">
+             Cancel
+            </button>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    </div>
+  </form>
+{% endblock content%}

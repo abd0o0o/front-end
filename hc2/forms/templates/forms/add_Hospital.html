@@ -1,0 +1,140 @@
+{% extends "forms/base.html" %}
+{% block addInfo %}
+    Add Hospital
+{% endblock addInfo%}
+{% block content %}
+        <button class="mdl-button mdl-js-button mdl-button--icon pull-right" data-upgraded=",MaterialButton" id="panel-button">
+           <i class="material-icons">
+            more_vert
+           </i>
+          </button>
+          <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" data-mdl-for="panel-button">
+           <li class="mdl-menu__item">
+            <i class="material-icons">
+             assistant_photo
+            </i>
+            Action
+           </li>
+           <li class="mdl-menu__item">
+            <i class="material-icons">
+             print
+            </i>
+            Another action
+           </li>
+           <li class="mdl-menu__item">
+            <i class="material-icons">
+             favorite
+            </i>
+            Something else
+
+                                            here
+           </li>
+          </ul>
+         </div>
+         <form>
+
+        
+         <div class="card-body row">
+          <div class="col-lg-12 p-t-20">
+           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+            <input class="mdl-textfield__input" id="txtHospitalName" type="text" maxlength="35" required/>
+            <label class="mdl-textfield__label">
+             Hospital Name
+            </label>
+           </div>
+          </div>
+          
+          <div class="col-lg-12 p-t-20">
+           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+            <input class="mdl-textfield__input" id="Type" type="text" maxlength="40" required/>
+            <label class="mdl-textfield__label">
+            Type
+            </label>
+           </div>
+          </div>
+
+          <div class="col-lg-12 p-t-20">
+           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+            <input class="mdl-textfield__input" id="text5" pattern="-?[0-9]*(\.[0-9]+)?" type="tel" maxlength="11" required/>
+            <label class="mdl-textfield__label" for="text5">
+             Mobile Number
+            </label>
+            <span class="mdl-textfield__error">
+             Number required!
+            </span>
+           </div>
+          </div>
+          
+          <div class="col-lg-12 p-t-20">
+            <div class="mdl-textfield mdl-js-textfield txt-full-width">
+             <input class="mdl-textfield__input" id="Address" type="text" maxlength="40" required maxlength="30"/>
+             <label class="mdl-textfield__label" for="text7">
+              Address
+             </label>
+            </div>
+           </div>
+          <div class="col-lg-12 p-t-20">
+           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+            <input class="mdl-textfield__input" id="txtemail" type="email" maxlength="40" required/>
+            <label class="mdl-textfield__label">
+             Email
+            </label>
+            <span class="mdl-textfield__error">
+             Enter Valid Email Address!
+            </span>
+           </div>
+          </div>
+          
+          <div class="col-lg-12 p-t-20">
+           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+            <input class="mdl-textfield__input" id="Fax" type="number" maxlength="20"/>
+            <label class="mdl-textfield__label">
+            Fax
+            </label>
+           </div>
+          </div>
+
+          <div class="col-lg-12 p-t-20">
+           <div class="mdl-textfield">
+            <input class="" id="ٌُER_Availability" type="checkbox" style="margin-right: 10px "/>
+            <label class="mdl-textfield__label" style="margin-left: 16px;">
+            ER Availability
+            </label>
+           </div>
+          </div>
+          
+                <!----------------------------------------------->
+
+                    <div class="col-lg-12 p-t-20">
+                    <div class="col-lg-12 p-t-20 text-center">
+
+           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height txt-full-width">
+            <div class="col-lg-12 p-t-20">
+              <input type="file"  id="upload-photo" name="files[]" multiple="multiple" accept="image/*" style="display: none;"/>
+             <label for="upload-photo" style="border: 1px solid #cccccc;
+             padding: 5px 30px;
+             font-family:arial;
+             font-size: 13px;
+             cursor:pointer">Upload Your Photo</label>
+            </div>
+
+
+<div class="col-lg-12 p-t-20">
+                    <div class="col-lg-12 p-t-20 text-center">
+
+          <div class="col-lg-12 p-t-20 text-center">
+           <button class="btn btn-circle btn-success" type="button">
+             Submit!
+            </button>
+           <button class="btn btn-circle btn-danger" type="button">
+             Cancel
+            </button>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+  </form>
+{% endblock content%}
